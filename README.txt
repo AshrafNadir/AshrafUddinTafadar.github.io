@@ -1,32 +1,80 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Personal Portfolio Website
 
+Welcome to my personal portfolio website.
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+This website showcases my **projects, skills, education, professional experience, CV, and certifications** as a Data Analyst.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## 👨‍💻 About Me
 
-(* = not included)
+I am a Data Analyst with a background in Computer Science and Data Analytics. I enjoy working with data, finding meaningful insights, and presenting information through clear and effective visualisations.
 
-AJ
-aj@lkn.io | @ajlkn
+### Skills
 
+* Python
+* SQL
+* R
+* Power BI
+* Tableau
+* Microsoft Excel
+* Data Analysis
+* Data Visualisation
 
-Credits:
+## 📂 Portfolio Sections
 
-	Demo Images:
-		Unsplash (unsplash.com)
+The website includes:
 
-	Icons:
-		Font Awesome (fontawesome.io)
+* **Projects** – Data analysis and visualisation projects
+* **Curriculum Vitae** – My education, experience and professional background
+* **About Me** – More information about my background and interests
+* **Certificates** – Professional certifications and achievements
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## 🛠️ Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Font Awesome
+* HTML5 UP – Massively Template
+
+## 🌐 Live Website
+
+You can visit my portfolio here:
+
+**[Add your portfolio website link here]**
+
+## 📁 Project Structure
+
+```text
+portfolio/
+│
+├── index.html
+├── CV.html
+├── about_me.html
+├── certificates.html
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── webfonts/
+│
+└── images/
+    ├── projects/
+    ├── certificates/
+    └── other images/
+```
+
+## 📜 Credits
+
+Website template: **Massively by HTML5 UP**
+
+Template available at:
+https://html5up.net/massively
+
+## 📄 License
+
+This portfolio website is intended for personal and professional portfolio use.
+
+---
+
+**Ashraf Uddin Tafadar**
+Data Analyst
