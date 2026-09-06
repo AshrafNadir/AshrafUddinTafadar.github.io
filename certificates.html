@@ -1,0 +1,403 @@
+```html
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+
+<head>
+
+    <title>Certificates - Ashraf Uddin Tafadar</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+
+    <!-- Certificate Gallery CSS -->
+    <style>
+
+        /* Certificate thumbnails */
+
+        .certificate-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .certificate-gallery img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+
+            transition: transform 0.3s ease;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .certificate-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Full screen background */
+
+        #certificate-lightbox {
+            display: none;
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.95);
+
+            z-index: 99999;
+
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px;
+
+            box-sizing: border-box;
+        }
+
+
+        /* Show lightbox */
+
+        #certificate-lightbox.show {
+            display: flex;
+        }
+
+
+        /* Large certificate */
+
+        #certificate-lightbox img {
+            max-width: 95%;
+            max-height: 90vh;
+
+            width: auto;
+            height: auto;
+
+            object-fit: contain;
+
+            border-radius: 5px;
+        }
+
+
+        /* X button */
+
+        .certificate-close {
+            position: absolute;
+
+            top: 20px;
+            right: 35px;
+
+            color: white;
+
+            font-size: 50px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            line-height: 1;
+
+            z-index: 100000;
+        }
+
+        .certificate-close:hover {
+            color: #ccc;
+        }
+
+
+        /* Mobile */
+
+        @media screen and (max-width: 736px) {
+
+            .certificate-gallery img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+
+            #certificate-lightbox {
+                padding: 15px;
+            }
+
+            #certificate-lightbox img {
+                max-width: 100%;
+                max-height: 85vh;
+            }
+
+            .certificate-close {
+                top: 15px;
+                right: 20px;
+                font-size: 40px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="is-preload">
+
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+
+        <!-- Header -->
+        <header id="header">
+
+            <a href="index.html" class="logo">
+                Home
+            </a>
+
+        </header>
+
+
+        <!-- Navigation -->
+        <nav id="nav">
+
+            <ul class="links">
+
+                <li>
+                    <a href="index.html">Projects</a>
+                </li>
+
+                <li>
+                    <a href="CV.html">Curriculum Vitae</a>
+                </li>
+                <li class="active">
+                    <a href="certificates.html">Certificates</a>
+                </li>
+
+                <li>
+                    <a href="about_me.html">About Me</a>
+                </li>
+
+                
+
+            </ul>
+
+
+            <ul class="icons">
+
+                <li>
+                    <a href="https://www.linkedin.com/in/ashraf-uddin-tafadar-5116a8167/"
+                       target="_blank"
+                       class="icon brands fa-linkedin">
+
+                        <span class="label">LinkedIn</span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="https://github.com/AshrafNadir"
+                       target="_blank"
+                       class="icon brands fa-github">
+
+                        <span class="label">GitHub</span>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Main -->
+        <div id="main">
+
+
+            <!-- Certificates -->
+            <section class="post">
+
+               
+
+
+                <!-- Certificate Gallery -->
+
+                <div class="certificate-gallery">
+
+
+                    <!-- Certificate 1 -->
+
+                    <img
+                        src="images/powerbi-300.jpg"
+                        alt="Microsoft Power BI Certificate"
+                        onclick="openCertificate(this.src)"
+                    >
+
+
+                    <!-- Certificate 2 -->
+
+                    <img
+                        src="images/Certificate of Excellence  - Ashraf Uddin Tafadar _page-0001.jpg"
+                        alt="Certificate of Excellence"
+                        onclick="openCertificate(this.src)"
+                    >
+
+
+                    <!-- Certificate 3 -->
+
+                    <img
+                        src="images/Level 2 Customer Service Certificate_page-0001.jpg"
+                        alt="Certificate 3"
+                        onclick="openCertificate(this.src)"
+                    >
+
+
+                    <!-- Certificate 4 -->
+
+                    <img
+                        src="images/CoSHH certificate_page-0001.jpg"
+                        alt="Certificate 4"
+                        onclick="openCertificate(this.src)"
+                    >
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Certificate Lightbox -->
+
+        <div
+            id="certificate-lightbox"
+            onclick="closeCertificate()"
+        >
+
+            <!-- Close button -->
+
+            <span
+                class="certificate-close"
+                onclick="closeCertificate()"
+            >
+                &times;
+            </span>
+
+
+            <!-- Large image -->
+
+            <img
+                id="certificate-large-image"
+                src=""
+                alt="Certificate"
+                onclick="event.stopPropagation()"
+            >
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div id="copyright">
+
+            <ul>
+
+                <li>Portfolio</li>
+
+                <li>Ashraf Uddin Tafadar</li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Scripts -->
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+
+    <script src="assets/js/breakpoints.min.js"></script>
+
+    <script src="assets/js/util.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+
+    <!-- Certificate Lightbox JavaScript -->
+
+    <script>
+
+        function openCertificate(imageSource) {
+
+            document.getElementById(
+                "certificate-large-image"
+            ).src = imageSource;
+
+            document.getElementById(
+                "certificate-lightbox"
+            ).classList.add("show");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        function closeCertificate() {
+
+            document.getElementById(
+                "certificate-lightbox"
+            ).classList.remove("show");
+
+            document.getElementById(
+                "certificate-large-image"
+            ).src = "";
+
+            document.body.style.overflow = "";
+
+        }
+
+
+        /* Close with ESC */
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+
+                closeCertificate();
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
+```
